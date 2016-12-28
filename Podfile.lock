@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (4.2.0)
+  - AlamofireObjectMapper (4.0.1):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 2.0)
+  - Charts (3.0.1):
+    - Charts/Core (= 3.0.1)
+  - Charts/Core (3.0.1)
+  - ObjectMapper (2.2.2)
+  - Realm (2.0.4):
+    - Realm/Headers (= 2.0.4)
+  - Realm/Headers (2.0.4)
+  - RealmSwift (2.0.4):
+    - Realm (= 2.0.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - AlamofireObjectMapper (~> 4.0)
+  - Charts (from `https://github.com/danielgindi/Charts.git`, branch `master`)
+  - RealmSwift (~> 2.0.2)
+
+EXTERNAL SOURCES:
+  Charts:
+    :branch: master
+    :git: https://github.com/danielgindi/Charts.git
+
+CHECKOUT OPTIONS:
+  Charts:
+    :commit: 3fe38177b3e351f6b2ebc177aea803996914c7f2
+    :git: https://github.com/danielgindi/Charts.git
+
+SPEC CHECKSUMS:
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  AlamofireObjectMapper: 842d2eed43a4d0593ff0110d54ac86a170c4519c
+  Charts: e1c22ca0f52867fadf8ee16ff723dfb0b464eb91
+  ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
+  Realm: 9da97f48365f8b99dd95c28d45ad8222d62e1775
+  RealmSwift: 01e8db006035f16003e6307ae8eae1adccce68db
+
+PODFILE CHECKSUM: 5537b469df7d671382f86091950f3f99ea4adac2
+
+COCOAPODS: 1.1.1

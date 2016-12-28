@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0148ABC1E0F0084007D9C82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0148ABB1E0F0084007D9C82 /* AppDelegate.swift */; };
+		C0148ABE1E0F0084007D9C82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0148ABD1E0F0084007D9C82 /* ViewController.swift */; };
+		C0148AC11E0F0084007D9C82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0148ABF1E0F0084007D9C82 /* Main.storyboard */; };
+		C0148AC31E0F0084007D9C82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0148AC21E0F0084007D9C82 /* Assets.xcassets */; };
+		C0148AC61E0F0084007D9C82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0148AC41E0F0084007D9C82 /* LaunchScreen.storyboard */; };
+		C0148AD11E0F0084007D9C82 /* VoiceMeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0148AD01E0F0084007D9C82 /* VoiceMeterTests.swift */; };
+		C0148ADC1E0F0084007D9C82 /* VoiceMeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0148ADB1E0F0084007D9C82 /* VoiceMeterUITests.swift */; };
+		C02072031E14185900A6E52F /* DateTimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02072021E14185900A6E52F /* DateTimeHelper.swift */; };
+		C0C13F741E11631700F3D1BD /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C13F6D1E11625400F3D1BD /* Charts.framework */; };
+		C0D4363E1E13C789007636DC /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D4363D1E13C789007636DC /* Event.swift */; };
+		C0F9859F1E13F2B900D4C54D /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F9859E1E13F2B900D4C54D /* EventService.swift */; };
+		C0F985AC1E13F2EC00D4C54D /* IEventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F985AB1E13F2EC00D4C54D /* IEventService.swift */; };
+		C0F985AE1E13FCDF00D4C54D /* HttpEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F985AD1E13FCDF00D4C54D /* HttpEntity.swift */; };
+		C0F985B01E14068700D4C54D /* VoiceMeterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F985AF1E14068700D4C54D /* VoiceMeterService.swift */; };
+		CB70C4EB973544B4137328B0 /* Pods_VoiceMeter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0DF02973931676FBE0334D1 /* Pods_VoiceMeter.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0148ACD1E0F0084007D9C82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0148AB01E0F0084007D9C82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0148AB71E0F0084007D9C82;
+			remoteInfo = VoiceMeter;
+		};
+		C0148AD81E0F0084007D9C82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0148AB01E0F0084007D9C82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0148AB71E0F0084007D9C82;
+			remoteInfo = VoiceMeter;
+		};
+		C0C13F6C1E11625400F3D1BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C13CEF1E11625300F3D1BD /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8BDA112BE011EA1D2783798EB52DB957;
+			remoteInfo = Charts;
+		};
+		C0C13F6E1E11625400F3D1BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C13CEF1E11625300F3D1BD /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 579C0BFBC69FC3060D9910A2526F6F4A;
+			remoteInfo = "Pods-VoiceMeter";
+		};
+		C0C13F701E11625400F3D1BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C13CEF1E11625300F3D1BD /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FBE7E1E946F24209614C5C99DB3ACED8;
+			remoteInfo = Realm;
+		};
+		C0C13F721E11625400F3D1BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C13CEF1E11625300F3D1BD /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 69691D27377038757D179659B7085C41;
+			remoteInfo = RealmSwift;
+		};
+		C0F985A71E13F2BA00D4C54D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C13CEF1E11625300F3D1BD /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC90B4120DD51DD9FA6333565FB0FAE7;
+			remoteInfo = AlamofireObjectMapper;
+		};
+		C0F985A91E13F2BA00D4C54D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C13CEF1E11625300F3D1BD /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3961100153764FA5F4F4403ACB02BA65;
+			remoteInfo = ObjectMapper;
+		};
+		C0FD16BF1E12D351009E2146 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0C13CEF1E11625300F3D1BD /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 81A83BFB5EA1F425688F615E81114A65;
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4318891B63BFBA930249A5F9 /* Pods-VoiceMeter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceMeter.release.xcconfig"; path = "Pods/Target Support Files/Pods-VoiceMeter/Pods-VoiceMeter.release.xcconfig"; sourceTree = "<group>"; };
+		C0148AB81E0F0084007D9C82 /* VoiceMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0148ABB1E0F0084007D9C82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C0148ABD1E0F0084007D9C82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C0148AC01E0F0084007D9C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C0148AC21E0F0084007D9C82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0148AC51E0F0084007D9C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C0148AC71E0F0084007D9C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0148ACC1E0F0084007D9C82 /* VoiceMeterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceMeterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0148AD01E0F0084007D9C82 /* VoiceMeterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMeterTests.swift; sourceTree = "<group>"; };
+		C0148AD21E0F0084007D9C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0148AD71E0F0084007D9C82 /* VoiceMeterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceMeterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0148ADB1E0F0084007D9C82 /* VoiceMeterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMeterUITests.swift; sourceTree = "<group>"; };
+		C0148ADD1E0F0084007D9C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C02072021E14185900A6E52F /* DateTimeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimeHelper.swift; sourceTree = "<group>"; };
+		C0C13CEF1E11625300F3D1BD /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		C0D4363D1E13C789007636DC /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		C0F9859E1E13F2B900D4C54D /* EventService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
+		C0F985AB1E13F2EC00D4C54D /* IEventService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IEventService.swift; sourceTree = "<group>"; };
+		C0F985AD1E13FCDF00D4C54D /* HttpEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpEntity.swift; sourceTree = "<group>"; };
+		C0F985AF1E14068700D4C54D /* VoiceMeterService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceMeterService.swift; sourceTree = "<group>"; };
+		CE46D10F92E92C451E8F14F1 /* Pods-VoiceMeter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceMeter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VoiceMeter/Pods-VoiceMeter.debug.xcconfig"; sourceTree = "<group>"; };
+		D0DF02973931676FBE0334D1 /* Pods_VoiceMeter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoiceMeter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0148AB51E0F0084007D9C82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0C13F741E11631700F3D1BD /* Charts.framework in Frameworks */,
+				CB70C4EB973544B4137328B0 /* Pods_VoiceMeter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0148AC91E0F0084007D9C82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0148AD41E0F0084007D9C82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0148AAF1E0F0084007D9C82 = {
+			isa = PBXGroup;
+			children = (
+				C0148ABA1E0F0084007D9C82 /* VoiceMeter */,
+				C0148ACF1E0F0084007D9C82 /* VoiceMeterTests */,
+				C0148ADA1E0F0084007D9C82 /* VoiceMeterUITests */,
+				C0148AB91E0F0084007D9C82 /* Products */,
+				F689476201EDF01E533C1392 /* Pods */,
+				FE501A5D411C85FE0254BC4B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C0148AB91E0F0084007D9C82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0148AB81E0F0084007D9C82 /* VoiceMeter.app */,
+				C0148ACC1E0F0084007D9C82 /* VoiceMeterTests.xctest */,
+				C0148AD71E0F0084007D9C82 /* VoiceMeterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0148ABA1E0F0084007D9C82 /* VoiceMeter */ = {
+			isa = PBXGroup;
+			children = (
+				C0148ABB1E0F0084007D9C82 /* AppDelegate.swift */,
+				C0148ABD1E0F0084007D9C82 /* ViewController.swift */,
+				C0F985AF1E14068700D4C54D /* VoiceMeterService.swift */,
+				C0F9859E1E13F2B900D4C54D /* EventService.swift */,
+				C0F985AB1E13F2EC00D4C54D /* IEventService.swift */,
+				C0148ABF1E0F0084007D9C82 /* Main.storyboard */,
+				C0148AC21E0F0084007D9C82 /* Assets.xcassets */,
+				C0148AC41E0F0084007D9C82 /* LaunchScreen.storyboard */,
+				C0148AC71E0F0084007D9C82 /* Info.plist */,
+				C0D4363D1E13C789007636DC /* Event.swift */,
+				C0F985AD1E13FCDF00D4C54D /* HttpEntity.swift */,
+				C02072021E14185900A6E52F /* DateTimeHelper.swift */,
+			);
+			path = VoiceMeter;
+			sourceTree = "<group>";
+		};
+		C0148ACF1E0F0084007D9C82 /* VoiceMeterTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0148AD01E0F0084007D9C82 /* VoiceMeterTests.swift */,
+				C0148AD21E0F0084007D9C82 /* Info.plist */,
+			);
+			path = VoiceMeterTests;
+			sourceTree = "<group>";
+		};
+		C0148ADA1E0F0084007D9C82 /* VoiceMeterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C0148ADB1E0F0084007D9C82 /* VoiceMeterUITests.swift */,
+				C0148ADD1E0F0084007D9C82 /* Info.plist */,
+			);
+			path = VoiceMeterUITests;
+			sourceTree = "<group>";
+		};
+		C0C13CF01E11625300F3D1BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0FD16C01E12D351009E2146 /* Alamofire.framework */,
+				C0F985A81E13F2BA00D4C54D /* AlamofireObjectMapper.framework */,
+				C0C13F6D1E11625400F3D1BD /* Charts.framework */,
+				C0F985AA1E13F2BA00D4C54D /* ObjectMapper.framework */,
+				C0C13F6F1E11625400F3D1BD /* Pods_VoiceMeter.framework */,
+				C0C13F711E11625400F3D1BD /* Realm.framework */,
+				C0C13F731E11625400F3D1BD /* RealmSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F689476201EDF01E533C1392 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0C13CEF1E11625300F3D1BD /* Pods.xcodeproj */,
+				CE46D10F92E92C451E8F14F1 /* Pods-VoiceMeter.debug.xcconfig */,
+				4318891B63BFBA930249A5F9 /* Pods-VoiceMeter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE501A5D411C85FE0254BC4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0DF02973931676FBE0334D1 /* Pods_VoiceMeter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0148AB71E0F0084007D9C82 /* VoiceMeter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0148AE01E0F0084007D9C82 /* Build configuration list for PBXNativeTarget "VoiceMeter" */;
+			buildPhases = (
+				A8BD186A119BA8FBF9FAB3D6 /* [CP] Check Pods Manifest.lock */,
+				C0148AB41E0F0084007D9C82 /* Sources */,
+				C0148AB51E0F0084007D9C82 /* Frameworks */,
+				C0148AB61E0F0084007D9C82 /* Resources */,
+				880794F409F09CAAF96AAD3D /* [CP] Embed Pods Frameworks */,
+				C7A7B356F3C53BCB3A11992F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoiceMeter;
+			productName = VoiceMeter;
+			productReference = C0148AB81E0F0084007D9C82 /* VoiceMeter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0148ACB1E0F0084007D9C82 /* VoiceMeterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0148AE31E0F0084007D9C82 /* Build configuration list for PBXNativeTarget "VoiceMeterTests" */;
+			buildPhases = (
+				C0148AC81E0F0084007D9C82 /* Sources */,
+				C0148AC91E0F0084007D9C82 /* Frameworks */,
+				C0148ACA1E0F0084007D9C82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0148ACE1E0F0084007D9C82 /* PBXTargetDependency */,
+			);
+			name = VoiceMeterTests;
+			productName = VoiceMeterTests;
+			productReference = C0148ACC1E0F0084007D9C82 /* VoiceMeterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0148AD61E0F0084007D9C82 /* VoiceMeterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0148AE61E0F0084007D9C82 /* Build configuration list for PBXNativeTarget "VoiceMeterUITests" */;
+			buildPhases = (
+				C0148AD31E0F0084007D9C82 /* Sources */,
+				C0148AD41E0F0084007D9C82 /* Frameworks */,
+				C0148AD51E0F0084007D9C82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0148AD91E0F0084007D9C82 /* PBXTargetDependency */,
+			);
+			name = VoiceMeterUITests;
+			productName = VoiceMeterUITests;
+			productReference = C0148AD71E0F0084007D9C82 /* VoiceMeterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0148AB01E0F0084007D9C82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					New,
+				);
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Arkadiusz Jachnik";
+				TargetAttributes = {
+					C0148AB71E0F0084007D9C82 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = MP68454C9V;
+						ProvisioningStyle = Automatic;
+					};
+					C0148ACB1E0F0084007D9C82 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C0148AB71E0F0084007D9C82;
+					};
+					C0148AD61E0F0084007D9C82 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C0148AB71E0F0084007D9C82;
+					};
+				};
+			};
+			buildConfigurationList = C0148AB31E0F0084007D9C82 /* Build configuration list for PBXProject "VoiceMeter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0148AAF1E0F0084007D9C82;
+			productRefGroup = C0148AB91E0F0084007D9C82 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C0C13CF01E11625300F3D1BD /* Products */;
+					ProjectRef = C0C13CEF1E11625300F3D1BD /* Pods.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C0148AB71E0F0084007D9C82 /* VoiceMeter */,
+				C0148ACB1E0F0084007D9C82 /* VoiceMeterTests */,
+				C0148AD61E0F0084007D9C82 /* VoiceMeterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C0C13F6D1E11625400F3D1BD /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = C0C13F6C1E11625400F3D1BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C13F6F1E11625400F3D1BD /* Pods_VoiceMeter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_VoiceMeter.framework;
+			remoteRef = C0C13F6E1E11625400F3D1BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C13F711E11625400F3D1BD /* Realm.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Realm.framework;
+			remoteRef = C0C13F701E11625400F3D1BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0C13F731E11625400F3D1BD /* RealmSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RealmSwift.framework;
+			remoteRef = C0C13F721E11625400F3D1BD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0F985A81E13F2BA00D4C54D /* AlamofireObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AlamofireObjectMapper.framework;
+			remoteRef = C0F985A71E13F2BA00D4C54D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0F985AA1E13F2BA00D4C54D /* ObjectMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjectMapper.framework;
+			remoteRef = C0F985A91E13F2BA00D4C54D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C0FD16C01E12D351009E2146 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = C0FD16BF1E12D351009E2146 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0148AB61E0F0084007D9C82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0148AC61E0F0084007D9C82 /* LaunchScreen.storyboard in Resources */,
+				C0148AC31E0F0084007D9C82 /* Assets.xcassets in Resources */,
+				C0148AC11E0F0084007D9C82 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0148ACA1E0F0084007D9C82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0148AD51E0F0084007D9C82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		880794F409F09CAAF96AAD3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoiceMeter/Pods-VoiceMeter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8BD186A119BA8FBF9FAB3D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C7A7B356F3C53BCB3A11992F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VoiceMeter/Pods-VoiceMeter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0148AB41E0F0084007D9C82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0F9859F1E13F2B900D4C54D /* EventService.swift in Sources */,
+				C0F985AC1E13F2EC00D4C54D /* IEventService.swift in Sources */,
+				C0148ABE1E0F0084007D9C82 /* ViewController.swift in Sources */,
+				C0D4363E1E13C789007636DC /* Event.swift in Sources */,
+				C02072031E14185900A6E52F /* DateTimeHelper.swift in Sources */,
+				C0F985AE1E13FCDF00D4C54D /* HttpEntity.swift in Sources */,
+				C0F985B01E14068700D4C54D /* VoiceMeterService.swift in Sources */,
+				C0148ABC1E0F0084007D9C82 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0148AC81E0F0084007D9C82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0148AD11E0F0084007D9C82 /* VoiceMeterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0148AD31E0F0084007D9C82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0148ADC1E0F0084007D9C82 /* VoiceMeterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0148ACE1E0F0084007D9C82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0148AB71E0F0084007D9C82 /* VoiceMeter */;
+			targetProxy = C0148ACD1E0F0084007D9C82 /* PBXContainerItemProxy */;
+		};
+		C0148AD91E0F0084007D9C82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0148AB71E0F0084007D9C82 /* VoiceMeter */;
+			targetProxy = C0148AD81E0F0084007D9C82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C0148ABF1E0F0084007D9C82 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0148AC01E0F0084007D9C82 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C0148AC41E0F0084007D9C82 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0148AC51E0F0084007D9C82 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0148ADE1E0F0084007D9C82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0148ADF1E0F0084007D9C82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0148AE11E0F0084007D9C82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE46D10F92E92C451E8F14F1 /* Pods-VoiceMeter.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MP68454C9V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VoiceMeter",
+				);
+				INFOPLIST_FILE = VoiceMeter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Realm/core",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.put.poznan.VoiceMeter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C0148AE21E0F0084007D9C82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4318891B63BFBA930249A5F9 /* Pods-VoiceMeter.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MP68454C9V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VoiceMeter",
+				);
+				INFOPLIST_FILE = VoiceMeter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/Realm/core",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pl.put.poznan.VoiceMeter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C0148AE41E0F0084007D9C82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VoiceMeterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.put.poznan.VoiceMeterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceMeter.app/VoiceMeter";
+			};
+			name = Debug;
+		};
+		C0148AE51E0F0084007D9C82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VoiceMeterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.put.poznan.VoiceMeterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceMeter.app/VoiceMeter";
+			};
+			name = Release;
+		};
+		C0148AE71E0F0084007D9C82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = VoiceMeterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.put.poznan.VoiceMeterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = VoiceMeter;
+			};
+			name = Debug;
+		};
+		C0148AE81E0F0084007D9C82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = VoiceMeterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.put.poznan.VoiceMeterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = VoiceMeter;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0148AB31E0F0084007D9C82 /* Build configuration list for PBXProject "VoiceMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0148ADE1E0F0084007D9C82 /* Debug */,
+				C0148ADF1E0F0084007D9C82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0148AE01E0F0084007D9C82 /* Build configuration list for PBXNativeTarget "VoiceMeter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0148AE11E0F0084007D9C82 /* Debug */,
+				C0148AE21E0F0084007D9C82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0148AE31E0F0084007D9C82 /* Build configuration list for PBXNativeTarget "VoiceMeterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0148AE41E0F0084007D9C82 /* Debug */,
+				C0148AE51E0F0084007D9C82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0148AE61E0F0084007D9C82 /* Build configuration list for PBXNativeTarget "VoiceMeterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0148AE71E0F0084007D9C82 /* Debug */,
+				C0148AE81E0F0084007D9C82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0148AB01E0F0084007D9C82 /* Project object */;
+}
